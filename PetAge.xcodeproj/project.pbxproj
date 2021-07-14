@@ -15,6 +15,8 @@
 		ACF0EAE3269E0AD200C41A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF0EAE1269E0AD200C41A64 /* LaunchScreen.storyboard */; };
 		ACF0EAEE269E0AD200C41A64 /* PetAgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0EAED269E0AD200C41A64 /* PetAgeTests.swift */; };
 		ACF0EAF9269E0AD200C41A64 /* PetAgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0EAF8269E0AD200C41A64 /* PetAgeUITests.swift */; };
+		ACF0EB07269E3E5500C41A64 /* catViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0EB06269E3E5500C41A64 /* catViewController.swift */; };
+		ACF0EB0A269E4B3800C41A64 /* dogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0EB09269E4B3800C41A64 /* dogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		ACF0EAF4269E0AD200C41A64 /* PetAgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetAgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF0EAF8269E0AD200C41A64 /* PetAgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAgeUITests.swift; sourceTree = "<group>"; };
 		ACF0EAFA269E0AD200C41A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF0EB06269E3E5500C41A64 /* catViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catViewController.swift; sourceTree = "<group>"; };
+		ACF0EB09269E4B3800C41A64 /* dogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,9 @@
 		ACF0EAD5269E0AD000C41A64 /* PetAge */ = {
 			isa = PBXGroup;
 			children = (
+				ACF0EB08269E3E5F00C41A64 /* view */,
 				ACF0EAD6269E0AD000C41A64 /* AppDelegate.swift */,
 				ACF0EAD8269E0AD000C41A64 /* SceneDelegate.swift */,
-				ACF0EADA269E0AD000C41A64 /* ViewController.swift */,
 				ACF0EADC269E0AD000C41A64 /* Main.storyboard */,
 				ACF0EADF269E0AD200C41A64 /* Assets.xcassets */,
 				ACF0EAE1269E0AD200C41A64 /* LaunchScreen.storyboard */,
@@ -126,6 +130,16 @@
 				ACF0EAFA269E0AD200C41A64 /* Info.plist */,
 			);
 			path = PetAgeUITests;
+			sourceTree = "<group>";
+		};
+		ACF0EB08269E3E5F00C41A64 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ACF0EB06269E3E5500C41A64 /* catViewController.swift */,
+				ACF0EB09269E4B3800C41A64 /* dogViewController.swift */,
+				ACF0EADA269E0AD000C41A64 /* ViewController.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF0EB0A269E4B3800C41A64 /* dogViewController.swift in Sources */,
 				ACF0EADB269E0AD000C41A64 /* ViewController.swift in Sources */,
+				ACF0EB07269E3E5500C41A64 /* catViewController.swift in Sources */,
 				ACF0EAD7269E0AD000C41A64 /* AppDelegate.swift in Sources */,
 				ACF0EAD9269E0AD000C41A64 /* SceneDelegate.swift in Sources */,
 			);

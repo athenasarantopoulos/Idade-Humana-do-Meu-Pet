@@ -1,24 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dfh-X9-Jv2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Idade Humana do seu Pet-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PetAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha o tipo do seu pet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-SA-cCv">
+                                <rect key="frame" x="85" y="162" width="244" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="2vi-h1-Y7D">
+                                <rect key="frame" x="38" y="357.5" width="338" height="181"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U35-iU-2Nx">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="181"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="princesa" translatesAutoresizingMaskIntoConstraints="NO" id="9H2-w6-lPY">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="UIc-1n-D4r"/>
+                                                    <constraint firstAttribute="width" constant="140" id="bmz-Sy-9Pw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmS-op-I4N">
+                                                <rect key="frame" x="49" y="158" width="42.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UdW-y1-1rF">
+                                        <rect key="frame" x="198" y="0.0" width="140" height="181"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiara" translatesAutoresizingMaskIntoConstraints="NO" id="35c-gI-8u8">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="CGz-cX-Nhx"/>
+                                                    <constraint firstAttribute="width" constant="140" id="l12-lP-H46"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cachorro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-J4-MoS">
+                                                <rect key="frame" x="29" y="158" width="82.5" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h9g-SA-cCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="CmJ-QK-eFC"/>
+                            <constraint firstItem="2vi-h1-Y7D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NVw-KX-aqe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9g-SA-cCv" secondAttribute="trailing" constant="85" id="cgk-nI-OrK"/>
+                            <constraint firstItem="h9g-SA-cCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="cqE-O1-QuO"/>
+                            <constraint firstItem="2vi-h1-Y7D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTj-wL-0MW"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Idade Humana do seu Pet" id="6nw-Nf-LJX"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="catImageView" destination="9H2-w6-lPY" id="Y6L-UM-Dv0"/>
+                        <outlet property="dogImageView" destination="35c-gI-8u8" id="CZd-8k-FUN"/>
+                        <segue destination="9t9-Cb-gGt" kind="show" identifier="catViewController" id="hIL-at-PnC"/>
+                        <segue destination="9sv-GJ-lgA" kind="show" identifier="dogViewController" id="uFM-AM-625"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="463.768115942029" y="247.76785714285714"/>
+        </scene>
+        <!--Dog View Controller-->
+        <scene sceneID="UcA-vV-esw">
+            <objects>
+                <viewController id="9sv-GJ-lgA" customClass="dogViewController" customModule="PetAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0H-20-577">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rkD-hJ-qpA">
+                                <rect key="frame" x="20" y="93" width="374" height="610"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem vindo!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn3-BI-UJg">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite o nome do seu doguinho: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4Q-Ww-khI">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTs-06-7Zz">
+                                        <rect key="frame" x="0.0" y="110.5" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione a idade do seu doguinho: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afr-e4-TSa">
+                                        <rect key="frame" x="0.0" y="174.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="1" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="T0B-np-c3k">
+                                        <rect key="frame" x="-2" y="225" width="378" height="31"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <connections>
+                                            <action selector="ageChanged:" destination="9sv-GJ-lgA" eventType="valueChanged" id="m3d-iT-voU"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5h-pG-UEm">
+                                        <rect key="frame" x="0.0" y="285" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o porte do seu cachorro:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-KV-iRx">
+                                        <rect key="frame" x="0.0" y="365" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-Ly-HPg">
+                                        <rect key="frame" x="0.0" y="415.5" width="374" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="Gdv-tv-PPm"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sb2-Ip-hte">
+                                        <rect key="frame" x="0.0" y="529.5" width="374" height="30"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Calcular Idade">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                            <color key="titleShadowColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showText:" destination="9sv-GJ-lgA" eventType="touchUpInside" id="Wj4-0L-gUZ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-r4-Chq">
+                                        <rect key="frame" x="0.0" y="589.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hxh-4p-a9l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rkD-hJ-qpA" secondAttribute="trailing" constant="20" id="6oF-PQ-JZh"/>
+                            <constraint firstItem="rkD-hJ-qpA" firstAttribute="centerX" secondItem="Q0H-20-577" secondAttribute="centerX" id="SCH-mu-ShJ"/>
+                            <constraint firstItem="rkD-hJ-qpA" firstAttribute="top" secondItem="Hxh-4p-a9l" secondAttribute="top" constant="5" id="bcX-zr-jLm"/>
+                            <constraint firstItem="rkD-hJ-qpA" firstAttribute="leading" secondItem="Q0H-20-577" secondAttribute="leading" constant="20" id="lqg-fb-7gi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DaK-c6-Daz"/>
+                    <connections>
+                        <outlet property="ageDogSlider" destination="T0B-np-c3k" id="MUZ-nH-OP3"/>
+                        <outlet property="bearingPickerView" destination="Y9C-Ly-HPg" id="qiJ-V3-6Pr"/>
+                        <outlet property="nameDogTextField" destination="NTs-06-7Zz" id="vJX-KL-k8p"/>
+                        <outlet property="showAgeLabel" destination="G5h-pG-UEm" id="pD8-K3-2sf"/>
+                        <outlet property="textAgeLabel" destination="Po5-r4-Chq" id="kbX-mY-OWA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Is3-rm-LDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463.768115942029" y="1066.7410714285713"/>
+        </scene>
+        <!--Cat View Controller-->
+        <scene sceneID="ETG-wg-sMK">
+            <objects>
+                <viewController id="9t9-Cb-gGt" customClass="catViewController" customModule="PetAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="COp-Ma-M7S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WZN-Ak-quR">
+                                <rect key="frame" x="20" y="180" width="374" height="505"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem vindo!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27t-fS-bfQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite o nome do seu gatinho: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4T-d2-zQb">
+                                        <rect key="frame" x="0.0" y="65" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pI-NU-pEd">
+                                        <rect key="frame" x="0.0" y="130" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione a idade do seu gatinho: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITn-o1-9hE">
+                                        <rect key="frame" x="0.0" y="195" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="1" maxValue="23" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-nC-eFg">
+                                        <rect key="frame" x="-2" y="260" width="378" height="51"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <connections>
+                                            <action selector="changeAge:" destination="9t9-Cb-gGt" eventType="valueChanged" id="fgG-E1-WrD"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K28-8E-QYH">
+                                        <rect key="frame" x="0.0" y="325" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSo-WC-Dt1">
+                                        <rect key="frame" x="0.0" y="390" width="374" height="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Calcular Idade">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                            <color key="titleShadowColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="calculateAgeButton:" destination="9t9-Cb-gGt" eventType="touchUpInside" id="aRi-yz-v9S"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNn-Lt-sCT">
+                                        <rect key="frame" x="0.0" y="455" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5V5-8o-S8Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WZN-Ak-quR" firstAttribute="top" secondItem="5V5-8o-S8Y" secondAttribute="top" constant="92" id="0eZ-Bl-6O0"/>
+                            <constraint firstItem="5V5-8o-S8Y" firstAttribute="trailing" secondItem="WZN-Ak-quR" secondAttribute="trailing" constant="20" id="3Ac-4m-Nnh"/>
+                            <constraint firstItem="WZN-Ak-quR" firstAttribute="centerX" secondItem="COp-Ma-M7S" secondAttribute="centerX" id="c1Y-8b-3NO"/>
+                            <constraint firstItem="WZN-Ak-quR" firstAttribute="leading" secondItem="5V5-8o-S8Y" secondAttribute="leading" constant="20" id="nGP-7G-X5o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nj0-cx-Oeu"/>
+                    <connections>
+                        <outlet property="catAgeSlider" destination="MEe-nC-eFg" id="3UJ-3S-Xyc"/>
+                        <outlet property="nameCatTextField" destination="3pI-NU-pEd" id="iza-TI-BcX"/>
+                        <outlet property="showAgeLabel" destination="K28-8E-QYH" id="QKn-hZ-SQE"/>
+                        <outlet property="showCalculateAgeLabel" destination="eNn-Lt-sCT" id="c5t-hJ-UGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOW-6q-AiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230.4347826086957" y="263.83928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Yj-BL-qgc">
+            <objects>
+                <navigationController id="dfh-X9-Jv2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ez2-bK-y4z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ely-x4-deE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVb-5R-pPn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kiara" width="1280" height="960"/>
+        <image name="princesa" width="1280" height="720"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
